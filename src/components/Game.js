@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Board from './Board'
+import Panel from './Panel'
 import calculateWinner from '../helpers'
 
 export default function Game() {
@@ -25,6 +26,9 @@ export default function Game() {
 
   }
   return (
-    <Board squares={board} onClick={handleClick}/>
+    <>
+      <Board squares={board} onClick={handleClick}/>
+      <Panel winner={winner} xIsNext={xIsNext} setBoard={setBoard} />
+    </>
   )
 }
