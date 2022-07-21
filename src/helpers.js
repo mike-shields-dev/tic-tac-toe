@@ -10,11 +10,19 @@ export default function calculateWinner(squares) {
     [2, 4, 6],
   ]
 
-  lines.forEach(line => {
+  let winner
+
+  lines.forEach((line) => {
     const [a, b, c] = line
     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-      return squares[a]
+      winner = squares[a]
     }
   })
-  return null
+  return winner
 }
+
+console.log(calculateWinner([
+  'X', 'X', 'X',
+  null, null, null,
+  null, null, null,
+]))
