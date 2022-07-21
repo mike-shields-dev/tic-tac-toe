@@ -6,6 +6,7 @@ export default function Game() {
   const [board, setBoard] = useState(Array(9).fill(null))
   const [xIsNext, setXIsNext] = useState(true)
   const winner = calculateWinner(board)
+
   function handleClick() {
     
   }
@@ -18,6 +19,6 @@ export default function Game() {
 
   }
   return (
-    <Board onClick={handleClick}/>
+    <Board squares={board} onClick={handleClick}/>
   )
 }
