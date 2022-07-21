@@ -1,7 +1,19 @@
 import React from 'react'
+import Board from './Board'
 
 export default function Game() {
+  function handleClick() {
+
+  }
+
+  function jumpTo() {
+
+  }
+
+  function renderMoves() {
+    
+  }
   return (
-    <div>Game</div>
+    <Board onClick={handleClick}/>
   )
 }
