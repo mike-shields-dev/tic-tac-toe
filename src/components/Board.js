@@ -6,7 +6,7 @@ export default function Board({ squares, onClick }) {
   return (
     <div className={styles.Board}>
       {squares.map((square, i) => (
-        <Square value={square} onClick={() => onClick(i)} />
+        <Square key={i} value={square} onClick={() => onClick(i)} />
       ))}
     </div>
   )
