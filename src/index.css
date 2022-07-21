@@ -1,0 +1,6 @@
+body {
+  height: 1OOvh;
+  display: grid;
+  place-content: center;
+  background: black;
+}
