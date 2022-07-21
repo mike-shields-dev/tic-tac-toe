@@ -7,8 +7,14 @@ export default function Game() {
   const [xIsNext, setXIsNext] = useState(true)
   const winner = calculateWinner(board)
 
-  function handleClick() {
-    
+  function handleClick(i) {
+    const boardCopy = [...board]
+    if(winner || boardCopy[i] !== null) {
+      return
+    }
+    boardCopy[i] = xIsNext ? 'X' : 'O'
+    setBoard(boardCopy)
+    setXIsNext(!xIsNext)
   }
 
   function jumpTo() {
