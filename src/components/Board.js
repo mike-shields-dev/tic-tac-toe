@@ -1,9 +1,10 @@
 import React from 'react'
+import styles from './Board.module.css'
 import Square from './Square'
 
 export default function Board({squares, onClick}) {
   return (
-    <div>
+    <div className={styles.Board}>
       <Square value='1' onClick={() => onClick("dummy value")} />
       <Square value='2' onClick={() => onClick("dummy value")} />
       <Square value='3' onClick={() => onClick("dummy value")} />
