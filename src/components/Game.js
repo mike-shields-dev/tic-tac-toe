@@ -3,7 +3,7 @@ import Board from './Board'
 
 export default function Game() {
   function handleClick() {
-
+    
   }
 
   function jumpTo() {
@@ -11,7 +11,7 @@ export default function Game() {
   }
 
   function renderMoves() {
-    
+
   }
   return (
     <Board onClick={handleClick}/>
